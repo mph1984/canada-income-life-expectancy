@@ -1,0 +1,593 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>How GDP Changed Over 217 Years? &#8212; How Does Income per Person (GDP) Affect Life Expectancy in Canada?</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Introduction" href="intro.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">How Does Income per Person (GDP) Affect Life Expectancy in Canada?</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Introduction
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   How GDP Changed Over 217 Years?
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/gdp_change.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fgdp_change.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/gdp_change.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>How GDP Changed Over 217 Years?</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="how-gdp-changed-over-217-years">
+<h1>How GDP Changed Over 217 Years?<a class="headerlink" href="#how-gdp-changed-over-217-years" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">canada_data_1800_2017</span><span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;gapminderdf.csv&#39;</span><span class="p">)</span>
+<span class="n">canada_data_1800_2017</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>year</th>
+      <th>income_per_person</th>
+      <th>life_expectancy</th>
+      <th>population</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1800</td>
+      <td>1310</td>
+      <td>39.0</td>
+      <td>646000.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1801</td>
+      <td>1320</td>
+      <td>39.0</td>
+      <td>653000.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1802</td>
+      <td>1330</td>
+      <td>39.0</td>
+      <td>661000.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1803</td>
+      <td>1340</td>
+      <td>39.0</td>
+      <td>669000.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1804</td>
+      <td>1350</td>
+      <td>39.0</td>
+      <td>677000.0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>214</th>
+      <td>2014</td>
+      <td>42900</td>
+      <td>81.8</td>
+      <td>35600000.0</td>
+    </tr>
+    <tr>
+      <th>215</th>
+      <td>2015</td>
+      <td>43000</td>
+      <td>81.7</td>
+      <td>35900000.0</td>
+    </tr>
+    <tr>
+      <th>216</th>
+      <td>2016</td>
+      <td>43100</td>
+      <td>81.8</td>
+      <td>36300000.0</td>
+    </tr>
+    <tr>
+      <th>217</th>
+      <td>2017</td>
+      <td>43500</td>
+      <td>82.0</td>
+      <td>36600000.0</td>
+    </tr>
+    <tr>
+      <th>218</th>
+      <td>2018</td>
+      <td>43800</td>
+      <td>82.2</td>
+      <td>37000000.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>219 rows × 4 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">canada_data_1800_2017</span><span class="p">[</span><span class="s1">&#39;population&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dtypes</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dtype(&#39;float64&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">altair</span> <span class="k">as</span> <span class="nn">alt</span>
+<span class="n">GDP_vs_lifeEXP</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">canada_data_1800_2017</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span><span class="o">.</span><span class="n">mark_circle</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="s1">&#39;income_per_person:Q&#39;</span><span class="p">,</span> 
+    <span class="n">y</span><span class="o">=</span><span class="s1">&#39;life_expectancy:Q&#39;</span>
+<span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;GDP vs life expectancy&quot;</span><span class="p">)</span>
+
+<span class="n">GDP_vs_lifeEXP</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\mph13\miniconda3\lib\site-packages\altair\utils\core.py:317: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+  for col_name, dtype in df.dtypes.iteritems():
+</pre></div>
+</div>
+<div class="output text_html">
+<div id="altair-viz-50a2fa31351f4a77af8aec4200fa9ed1"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-50a2fa31351f4a77af8aec4200fa9ed1") {
+      outputDiv = document.getElementById("altair-viz-50a2fa31351f4a77af8aec4200fa9ed1");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.17.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "4.17.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"name": "data-df37c1a74d8c271a1b1da18de696431a"}, "mark": "circle", "encoding": {"x": {"field": "income_per_person", "type": "quantitative"}, "y": {"field": "life_expectancy", "type": "quantitative"}}, "height": 300, "title": "GDP vs life expectancy", "width": 500, "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "datasets": {"data-df37c1a74d8c271a1b1da18de696431a": [{"year": 1800, "income_per_person": 1310, "life_expectancy": 39.0, "population": 646000.0}, {"year": 1801, "income_per_person": 1320, "life_expectancy": 39.0, "population": 653000.0}, {"year": 1802, "income_per_person": 1330, "life_expectancy": 39.0, "population": 661000.0}, {"year": 1803, "income_per_person": 1340, "life_expectancy": 39.0, "population": 669000.0}, {"year": 1804, "income_per_person": 1350, "life_expectancy": 39.0, "population": 677000.0}, {"year": 1805, "income_per_person": 1360, "life_expectancy": 39.0, "population": 684000.0}, {"year": 1806, "income_per_person": 1360, "life_expectancy": 39.0, "population": 693000.0}, {"year": 1807, "income_per_person": 1370, "life_expectancy": 39.0, "population": 701000.0}, {"year": 1808, "income_per_person": 1380, "life_expectancy": 39.0, "population": 709000.0}, {"year": 1809, "income_per_person": 1390, "life_expectancy": 39.0, "population": 717000.0}, {"year": 1810, "income_per_person": 1400, "life_expectancy": 39.0, "population": 728000.0}, {"year": 1811, "income_per_person": 1410, "life_expectancy": 39.0, "population": 737000.0}, {"year": 1812, "income_per_person": 1420, "life_expectancy": 39.0, "population": 748000.0}, {"year": 1813, "income_per_person": 1430, "life_expectancy": 39.0, "population": 760000.0}, {"year": 1814, "income_per_person": 1440, "life_expectancy": 39.0, "population": 773000.0}, {"year": 1815, "income_per_person": 1440, "life_expectancy": 39.0, "population": 787000.0}, {"year": 1816, "income_per_person": 1450, "life_expectancy": 39.0, "population": 803000.0}, {"year": 1817, "income_per_person": 1460, "life_expectancy": 39.0, "population": 820000.0}, {"year": 1818, "income_per_person": 1470, "life_expectancy": 39.0, "population": 838000.0}, {"year": 1819, "income_per_person": 1480, "life_expectancy": 39.0, "population": 858000.0}, {"year": 1820, "income_per_person": 1490, "life_expectancy": 39.0, "population": 879000.0}, {"year": 1821, "income_per_person": 1510, "life_expectancy": 39.0, "population": 903000.0}, {"year": 1822, "income_per_person": 1520, "life_expectancy": 39.0, "population": 928000.0}, {"year": 1823, "income_per_person": 1540, "life_expectancy": 39.0, "population": 955000.0}, {"year": 1824, "income_per_person": 1550, "life_expectancy": 39.0, "population": 983000.0}, {"year": 1825, "income_per_person": 1570, "life_expectancy": 39.0, "population": 1010000.0}, {"year": 1826, "income_per_person": 1590, "life_expectancy": 39.0, "population": 1050000.0}, {"year": 1827, "income_per_person": 1600, "life_expectancy": 39.0, "population": 1080000.0}, {"year": 1828, "income_per_person": 1620, "life_expectancy": 39.0, "population": 1120000.0}, {"year": 1829, "income_per_person": 1630, "life_expectancy": 39.0, "population": 1160000.0}, {"year": 1830, "income_per_person": 1650, "life_expectancy": 39.0, "population": 1200000.0}, {"year": 1831, "income_per_person": 1680, "life_expectancy": 39.0, "population": 1250000.0}, {"year": 1832, "income_per_person": 1700, "life_expectancy": 39.2, "population": 1290000.0}, {"year": 1833, "income_per_person": 1730, "life_expectancy": 39.3, "population": 1340000.0}, {"year": 1834, "income_per_person": 1750, "life_expectancy": 39.4, "population": 1390000.0}, {"year": 1835, "income_per_person": 1780, "life_expectancy": 39.5, "population": 1450000.0}, {"year": 1836, "income_per_person": 1810, "life_expectancy": 39.7, "population": 1500000.0}, {"year": 1837, "income_per_person": 1840, "life_expectancy": 39.8, "population": 1560000.0}, {"year": 1838, "income_per_person": 1860, "life_expectancy": 39.9, "population": 1620000.0}, {"year": 1839, "income_per_person": 1890, "life_expectancy": 40.1, "population": 1680000.0}, {"year": 1840, "income_per_person": 1920, "life_expectancy": 40.2, "population": 1750000.0}, {"year": 1841, "income_per_person": 1950, "life_expectancy": 40.3, "population": 1810000.0}, {"year": 1842, "income_per_person": 1970, "life_expectancy": 40.4, "population": 1880000.0}, {"year": 1843, "income_per_person": 2000, "life_expectancy": 40.5, "population": 1950000.0}, {"year": 1844, "income_per_person": 2030, "life_expectancy": 40.5, "population": 2020000.0}, {"year": 1845, "income_per_person": 2060, "life_expectancy": 40.6, "population": 2090000.0}, {"year": 1846, "income_per_person": 2080, "life_expectancy": 40.7, "population": 2170000.0}, {"year": 1847, "income_per_person": 2110, "life_expectancy": 40.8, "population": 2250000.0}, {"year": 1848, "income_per_person": 2140, "life_expectancy": 40.8, "population": 2320000.0}, {"year": 1849, "income_per_person": 2170, "life_expectancy": 40.9, "population": 2410000.0}, {"year": 1850, "income_per_person": 2200, "life_expectancy": 41.0, "population": 2490000.0}, {"year": 1851, "income_per_person": 2220, "life_expectancy": 41.1, "population": 2570000.0}, {"year": 1852, "income_per_person": 2240, "life_expectancy": 41.1, "population": 2650000.0}, {"year": 1853, "income_per_person": 2260, "life_expectancy": 41.2, "population": 2730000.0}, {"year": 1854, "income_per_person": 2280, "life_expectancy": 41.2, "population": 2810000.0}, {"year": 1855, "income_per_person": 2300, "life_expectancy": 41.3, "population": 2880000.0}, {"year": 1856, "income_per_person": 2320, "life_expectancy": 41.3, "population": 2950000.0}, {"year": 1857, "income_per_person": 2340, "life_expectancy": 41.4, "population": 3030000.0}, {"year": 1858, "income_per_person": 2360, "life_expectancy": 41.4, "population": 3100000.0}, {"year": 1859, "income_per_person": 2380, "life_expectancy": 41.5, "population": 3170000.0}, {"year": 1860, "income_per_person": 2410, "life_expectancy": 41.5, "population": 3230000.0}, {"year": 1861, "income_per_person": 2440, "life_expectancy": 41.6, "population": 3290000.0}, {"year": 1862, "income_per_person": 2480, "life_expectancy": 41.7, "population": 3360000.0}, {"year": 1863, "income_per_person": 2520, "life_expectancy": 41.8, "population": 3420000.0}, {"year": 1864, "income_per_person": 2560, "life_expectancy": 41.9, "population": 3480000.0}, {"year": 1865, "income_per_person": 2600, "life_expectancy": 42.0, "population": 3540000.0}, {"year": 1866, "income_per_person": 2640, "life_expectancy": 42.1, "population": 3600000.0}, {"year": 1867, "income_per_person": 2680, "life_expectancy": 42.2, "population": 3650000.0}, {"year": 1868, "income_per_person": 2730, "life_expectancy": 42.3, "population": 3710000.0}, {"year": 1869, "income_per_person": 2770, "life_expectancy": 42.4, "population": 3760000.0}, {"year": 1870, "income_per_person": 2810, "life_expectancy": 42.5, "population": 3820000.0}, {"year": 1871, "income_per_person": 2910, "life_expectancy": 42.6, "population": 3870000.0}, {"year": 1872, "income_per_person": 2830, "life_expectancy": 42.8, "population": 3920000.0}, {"year": 1873, "income_per_person": 3060, "life_expectancy": 43.0, "population": 3970000.0}, {"year": 1874, "income_per_person": 3080, "life_expectancy": 43.2, "population": 4020000.0}, {"year": 1875, "income_per_person": 2960, "life_expectancy": 43.4, "population": 4080000.0}, {"year": 1876, "income_per_person": 2730, "life_expectancy": 43.6, "population": 4130000.0}, {"year": 1877, "income_per_person": 2870, "life_expectancy": 43.9, "population": 4190000.0}, {"year": 1878, "income_per_person": 2720, "life_expectancy": 44.1, "population": 4240000.0}, {"year": 1879, "income_per_person": 2940, "life_expectancy": 44.3, "population": 4300000.0}, {"year": 1880, "income_per_person": 3020, "life_expectancy": 44.5, "population": 4360000.0}, {"year": 1881, "income_per_person": 3390, "life_expectancy": 44.7, "population": 4420000.0}, {"year": 1882, "income_per_person": 3510, "life_expectancy": 44.8, "population": 4480000.0}, {"year": 1883, "income_per_person": 3480, "life_expectancy": 44.8, "population": 4530000.0}, {"year": 1884, "income_per_person": 3710, "life_expectancy": 44.9, "population": 4590000.0}, {"year": 1885, "income_per_person": 3450, "life_expectancy": 44.9, "population": 4650000.0}, {"year": 1886, "income_per_person": 3450, "life_expectancy": 45.0, "population": 4700000.0}, {"year": 1887, "income_per_person": 3530, "life_expectancy": 45.0, "population": 4760000.0}, {"year": 1888, "income_per_person": 3740, "life_expectancy": 45.0, "population": 4810000.0}, {"year": 1889, "income_per_person": 3730, "life_expectancy": 45.1, "population": 4860000.0}, {"year": 1890, "income_per_person": 3960, "life_expectancy": 45.1, "population": 4910000.0}, {"year": 1891, "income_per_person": 4010, "life_expectancy": 45.2, "population": 4960000.0}, {"year": 1892, "income_per_person": 3950, "life_expectancy": 45.5, "population": 5010000.0}, {"year": 1893, "income_per_person": 3890, "life_expectancy": 45.9, "population": 5060000.0}, {"year": 1894, "income_per_person": 4030, "life_expectancy": 46.2, "population": 5110000.0}, {"year": 1895, "income_per_person": 3950, "life_expectancy": 46.6, "population": 5160000.0}, {"year": 1896, "income_per_person": 3810, "life_expectancy": 46.9, "population": 5220000.0}, {"year": 1897, "income_per_person": 4190, "life_expectancy": 47.3, "population": 5280000.0}, {"year": 1898, "income_per_person": 4310, "life_expectancy": 47.6, "population": 5350000.0}, {"year": 1899, "income_per_person": 4660, "life_expectancy": 48.0, "population": 5440000.0}, {"year": 1900, "income_per_person": 4860, "life_expectancy": 48.3, "population": 5530000.0}, {"year": 1901, "income_per_person": 5170, "life_expectancy": 48.6, "population": 5630000.0}, {"year": 1902, "income_per_person": 5560, "life_expectancy": 49.0, "population": 5720000.0}, {"year": 1903, "income_per_person": 5560, "life_expectancy": 49.4, "population": 5860000.0}, {"year": 1904, "income_per_person": 5470, "life_expectancy": 49.8, "population": 6020000.0}, {"year": 1905, "income_per_person": 5940, "life_expectancy": 50.2, "population": 6190000.0}, {"year": 1906, "income_per_person": 6420, "life_expectancy": 50.6, "population": 6370000.0}, {"year": 1907, "income_per_person": 6470, "life_expectancy": 51.0, "population": 6550000.0}, {"year": 1908, "income_per_person": 5960, "life_expectancy": 51.4, "population": 6750000.0}, {"year": 1909, "income_per_person": 6430, "life_expectancy": 51.8, "population": 6980000.0}, {"year": 1910, "income_per_person": 6790, "life_expectancy": 52.1, "population": 7180000.0}, {"year": 1911, "income_per_person": 7030, "life_expectancy": 52.5, "population": 7380000.0}, {"year": 1912, "income_per_person": 7310, "life_expectancy": 53.0, "population": 7600000.0}, {"year": 1913, "income_per_person": 7420, "life_expectancy": 53.4, "population": 7820000.0}, {"year": 1914, "income_per_person": 6710, "life_expectancy": 53.9, "population": 8020000.0}, {"year": 1915, "income_per_person": 7060, "life_expectancy": 54.3, "population": 8140000.0}, {"year": 1916, "income_per_person": 7740, "life_expectancy": 54.8, "population": 8200000.0}, {"year": 1917, "income_per_person": 8000, "life_expectancy": 55.3, "population": 8260000.0}, {"year": 1918, "income_per_person": 7400, "life_expectancy": 47.2, "population": 8370000.0}, {"year": 1919, "income_per_person": 6690, "life_expectancy": 56.2, "population": 8540000.0}, {"year": 1920, "income_per_person": 6430, "life_expectancy": 56.6, "population": 8760000.0}, {"year": 1921, "income_per_person": 5590, "life_expectancy": 57.1, "population": 8960000.0}, {"year": 1922, "income_per_person": 6310, "life_expectancy": 57.1, "population": 9120000.0}, {"year": 1923, "income_per_person": 6610, "life_expectancy": 57.1, "population": 9240000.0}, {"year": 1924, "income_per_person": 6610, "life_expectancy": 58.9, "population": 9370000.0}, {"year": 1925, "income_per_person": 7210, "life_expectancy": 59.4, "population": 9520000.0}, {"year": 1926, "income_per_person": 7470, "life_expectancy": 58.0, "population": 9690000.0}, {"year": 1927, "income_per_person": 8050, "life_expectancy": 58.7, "population": 9880000.0}, {"year": 1928, "income_per_person": 8580, "life_expectancy": 58.6, "population": 10100000.0}, {"year": 1929, "income_per_person": 8400, "life_expectancy": 58.0, "population": 10300000.0}, {"year": 1930, "income_per_person": 7980, "life_expectancy": 59.0, "population": 10400000.0}, {"year": 1931, "income_per_person": 6640, "life_expectancy": 60.4, "population": 10600000.0}, {"year": 1932, "income_per_person": 6090, "life_expectancy": 61.5, "population": 10800000.0}, {"year": 1933, "income_per_person": 5590, "life_expectancy": 62.4, "population": 10900000.0}, {"year": 1934, "income_per_person": 6120, "life_expectancy": 62.8, "population": 11000000.0}, {"year": 1935, "income_per_person": 6540, "life_expectancy": 62.5, "population": 11100000.0}, {"year": 1936, "income_per_person": 6830, "life_expectancy": 62.8, "population": 11200000.0}, {"year": 1937, "income_per_person": 7410, "life_expectancy": 61.4, "population": 11300000.0}, {"year": 1938, "income_per_person": 7520, "life_expectancy": 63.4, "population": 11400000.0}, {"year": 1939, "income_per_person": 7890, "life_expectancy": 63.8, "population": 11500000.0}, {"year": 1940, "income_per_person": 8880, "life_expectancy": 64.1, "population": 11700000.0}, {"year": 1941, "income_per_person": 10000, "life_expectancy": 63.8, "population": 11800000.0}, {"year": 1942, "income_per_person": 11600, "life_expectancy": 64.8, "population": 11900000.0}, {"year": 1943, "income_per_person": 12000, "life_expectancy": 64.7, "population": 12100000.0}, {"year": 1944, "income_per_person": 12300, "life_expectancy": 65.4, "population": 12200000.0}, {"year": 1945, "income_per_person": 11800, "life_expectancy": 66.4, "population": 12400000.0}, {"year": 1946, "income_per_person": 11500, "life_expectancy": 66.6, "population": 12600000.0}, {"year": 1947, "income_per_person": 11700, "life_expectancy": 66.8, "population": 12900000.0}, {"year": 1948, "income_per_person": 11700, "life_expectancy": 67.4, "population": 13100000.0}, {"year": 1949, "income_per_person": 11700, "life_expectancy": 67.7, "population": 13400000.0}, {"year": 1950, "income_per_person": 12000, "life_expectancy": 68.4, "population": 13700000.0}, {"year": 1951, "income_per_person": 12400, "life_expectancy": 68.6, "population": 14100000.0}, {"year": 1952, "income_per_person": 12900, "life_expectancy": 68.8, "population": 14500000.0}, {"year": 1953, "income_per_person": 13200, "life_expectancy": 69.2, "population": 14900000.0}, {"year": 1954, "income_per_person": 12700, "life_expectancy": 70.1, "population": 15300000.0}, {"year": 1955, "income_per_person": 13500, "life_expectancy": 70.1, "population": 15700000.0}, {"year": 1956, "income_per_person": 14300, "life_expectancy": 70.1, "population": 16200000.0}, {"year": 1957, "income_per_person": 14200, "life_expectancy": 70.0, "population": 16600000.0}, {"year": 1958, "income_per_person": 14100, "life_expectancy": 70.7, "population": 17100000.0}, {"year": 1959, "income_per_person": 14300, "life_expectancy": 70.8, "population": 17500000.0}, {"year": 1960, "income_per_person": 14500, "life_expectancy": 71.1, "population": 17900000.0}, {"year": 1961, "income_per_person": 14600, "life_expectancy": 71.4, "population": 18300000.0}, {"year": 1962, "income_per_person": 15300, "life_expectancy": 71.4, "population": 18700000.0}, {"year": 1963, "income_per_person": 15800, "life_expectancy": 71.4, "population": 19000000.0}, {"year": 1964, "income_per_person": 16500, "life_expectancy": 71.8, "population": 19400000.0}, {"year": 1965, "income_per_person": 17300, "life_expectancy": 71.9, "population": 19700000.0}, {"year": 1966, "income_per_person": 18100, "life_expectancy": 72.0, "population": 20100000.0}, {"year": 1967, "income_per_person": 18300, "life_expectancy": 72.2, "population": 20400000.0}, {"year": 1968, "income_per_person": 19000, "life_expectancy": 72.4, "population": 20800000.0}, {"year": 1969, "income_per_person": 19700, "life_expectancy": 72.5, "population": 21100000.0}, {"year": 1970, "income_per_person": 19900, "life_expectancy": 72.8, "population": 21500000.0}, {"year": 1971, "income_per_person": 20800, "life_expectancy": 72.9, "population": 21800000.0}, {"year": 1972, "income_per_person": 21600, "life_expectancy": 73.0, "population": 22200000.0}, {"year": 1973, "income_per_person": 22900, "life_expectancy": 73.2, "population": 22500000.0}, {"year": 1974, "income_per_person": 23500, "life_expectancy": 73.4, "population": 22800000.0}, {"year": 1975, "income_per_person": 23700, "life_expectancy": 73.7, "population": 23200000.0}, {"year": 1976, "income_per_person": 24600, "life_expectancy": 74.0, "population": 23500000.0}, {"year": 1977, "income_per_person": 25200, "life_expectancy": 74.3, "population": 23700000.0}, {"year": 1978, "income_per_person": 25900, "life_expectancy": 74.6, "population": 24000000.0}, {"year": 1979, "income_per_person": 26800, "life_expectancy": 75.0, "population": 24300000.0}, {"year": 1980, "income_per_person": 26800, "life_expectancy": 75.3, "population": 24500000.0}, {"year": 1981, "income_per_person": 27300, "life_expectancy": 75.6, "population": 24800000.0}, {"year": 1982, "income_per_person": 26100, "life_expectancy": 75.9, "population": 25000000.0}, {"year": 1983, "income_per_person": 26600, "life_expectancy": 76.1, "population": 25300000.0}, {"year": 1984, "income_per_person": 27900, "life_expectancy": 76.4, "population": 25600000.0}, {"year": 1985, "income_per_person": 29100, "life_expectancy": 76.5, "population": 25900000.0}, {"year": 1986, "income_per_person": 29600, "life_expectancy": 76.7, "population": 26200000.0}, {"year": 1987, "income_per_person": 30400, "life_expectancy": 76.8, "population": 26600000.0}, {"year": 1988, "income_per_person": 31500, "life_expectancy": 77.0, "population": 26900000.0}, {"year": 1989, "income_per_person": 31700, "life_expectancy": 77.2, "population": 27300000.0}, {"year": 1990, "income_per_person": 31300, "life_expectancy": 77.4, "population": 27700000.0}, {"year": 1991, "income_per_person": 30200, "life_expectancy": 77.6, "population": 28000000.0}, {"year": 1992, "income_per_person": 30100, "life_expectancy": 77.8, "population": 28400000.0}, {"year": 1993, "income_per_person": 30600, "life_expectancy": 77.8, "population": 28700000.0}, {"year": 1994, "income_per_person": 31600, "life_expectancy": 77.9, "population": 29000000.0}, {"year": 1995, "income_per_person": 32200, "life_expectancy": 78.0, "population": 29300000.0}, {"year": 1996, "income_per_person": 32400, "life_expectancy": 78.3, "population": 29600000.0}, {"year": 1997, "income_per_person": 33400, "life_expectancy": 78.5, "population": 29900000.0}, {"year": 1998, "income_per_person": 34400, "life_expectancy": 78.7, "population": 30200000.0}, {"year": 1999, "income_per_person": 35900, "life_expectancy": 79.0, "population": 30500000.0}, {"year": 2000, "income_per_person": 37400, "life_expectancy": 79.2, "population": 30700000.0}, {"year": 2001, "income_per_person": 37700, "life_expectancy": 79.4, "population": 31000000.0}, {"year": 2002, "income_per_person": 38500, "life_expectancy": 79.6, "population": 31300000.0}, {"year": 2003, "income_per_person": 38800, "life_expectancy": 79.8, "population": 31600000.0}, {"year": 2004, "income_per_person": 39600, "life_expectancy": 80.0, "population": 31900000.0}, {"year": 2005, "income_per_person": 40500, "life_expectancy": 80.2, "population": 32300000.0}, {"year": 2006, "income_per_person": 41200, "life_expectancy": 80.4, "population": 32600000.0}, {"year": 2007, "income_per_person": 41600, "life_expectancy": 80.6, "population": 33000000.0}, {"year": 2008, "income_per_person": 41600, "life_expectancy": 80.8, "population": 33400000.0}, {"year": 2009, "income_per_person": 39900, "life_expectancy": 81.1, "population": 33800000.0}, {"year": 2010, "income_per_person": 40700, "life_expectancy": 81.3, "population": 34200000.0}, {"year": 2011, "income_per_person": 41600, "life_expectancy": 81.5, "population": 34500000.0}, {"year": 2012, "income_per_person": 41800, "life_expectancy": 81.6, "population": 34900000.0}, {"year": 2013, "income_per_person": 42300, "life_expectancy": 81.7, "population": 35300000.0}, {"year": 2014, "income_per_person": 42900, "life_expectancy": 81.8, "population": 35600000.0}, {"year": 2015, "income_per_person": 43000, "life_expectancy": 81.7, "population": 35900000.0}, {"year": 2016, "income_per_person": 43100, "life_expectancy": 81.8, "population": 36300000.0}, {"year": 2017, "income_per_person": 43500, "life_expectancy": 82.0, "population": 36600000.0}, {"year": 2018, "income_per_person": 43800, "life_expectancy": 82.2, "population": 37000000.0}]}}, {"mode": "vega-lite"});
+</script></div></div>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Introduction</p>
+        </div>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Mojtaba Porhemmat<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
